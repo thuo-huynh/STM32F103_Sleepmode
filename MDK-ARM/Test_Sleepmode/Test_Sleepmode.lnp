@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"test_sleepmode\startup_stm32f103xb.o"
+"test_sleepmode\main.o"
+"test_sleepmode\stm32f1xx_hal_msp.o"
+"test_sleepmode\stm32f1xx_it.o"
+"test_sleepmode\stm32f1xx_hal_tim.o"
+"test_sleepmode\stm32f1xx_hal_rcc.o"
+"test_sleepmode\stm32f1xx_hal_gpio_ex.o"
+"test_sleepmode\stm32f1xx_hal_flash.o"
+"test_sleepmode\stm32f1xx_hal_tim_ex.o"
+"test_sleepmode\stm32f1xx_hal_dma.o"
+"test_sleepmode\stm32f1xx_hal_flash_ex.o"
+"test_sleepmode\stm32f1xx_hal_rcc_ex.o"
+"test_sleepmode\stm32f1xx_hal.o"
+"test_sleepmode\stm32f1xx_hal_gpio.o"
+"test_sleepmode\stm32f1xx_hal_pwr.o"
+"test_sleepmode\stm32f1xx_hal_cortex.o"
+"test_sleepmode\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Test_Sleepmode\Test_Sleepmode.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Test_Sleepmode.map" -o Test_Sleepmode\Test_Sleepmode.axf
